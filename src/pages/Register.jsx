@@ -2,25 +2,21 @@ import styled from "styled-components"
 
 const Container = styled.div`
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     background: linear-gradient(
         rgba(222,255,255,0.5),
         rgba(222,255,255,0.5)
         ),
      url("https://www.ixpap.com/images/2021/02/whatsapp-wallpaper-ixpap-17.jpg") center;
-    
+     display: flex;
+     align-items: center;
+     justify-content: center;
 `;
 
 const Wrapper = styled.div`
-    width: 50%;
-    height: 90vh;
+    width: 30%;
     padding: 20px;
-    background-color: white;
-   
-    
+    background-color: white; 
 `;
 
 const Title = styled.h1`
@@ -31,21 +27,37 @@ const Title = styled.h1`
 `;
 
 const Form = styled.form`
-
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Input = styled.input`
-    
-    min-width: 50%;
+    flex: 1;
+    min-width: 40%;
+    justify-content: center;
     margin: 20px 10px 0px 0px;
     padding: 10px;
 `;
 
-const Agreement = styled.span``;
+const Agreement = styled.span`
+    font-size: 12px;
+    margin: 20px 0px;
+    font-weight: 500;
+    font-family: Poppins;
+    word-spacing: 5px;
+`;
 
-const Button = styled.button``;
+const Button = styled.button`
+    width: 40%;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: Poppins; 
+`;
 
 const Register = () => {
   return (
@@ -57,8 +69,8 @@ const Register = () => {
           <Input placeholder ="Last Name" />
           <Input placeholder ="UserName" />
           <Input placeholder ="Email" />
-          <Input placeholder ="Password" />
-          <Input placeholder ="Confirm Password" />
+          <Input type= "password" placeholder ="Password" />
+          <Input type= "password" placeholder ="Confirm Password" />
           <Agreement>
               By creating an account, I consent to the processing of personal
               data in accordance with the <b>PRIVACY POLICY</b>
