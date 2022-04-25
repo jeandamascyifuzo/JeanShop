@@ -40,23 +40,27 @@ export const categories =
     {
     id: 1,
     img:"https://cdn.pixabay.com/photo/2021/10/14/11/04/castle-6708761__340.jpg",
-    title: "SHIRT STYLE"
+    title: "SHIRT STYLE",
+    cat:"women"
 
 },
 {
     id: 2,
     img:"https://cdn.pixabay.com/photo/2022/02/15/07/27/travel-7014427__340.jpg",
-    title: "BLACK JACKETS"
+    title: "BLACK JACKETS",
+    cat:"coat"
 },
 {
     id: 3,
     img:"https://cdn.pixabay.com/photo/2021/10/14/11/04/castle-6708761__340.jpg",
-    title: "LIGHT JACKETS"
+    title: "LIGHT JACKETS",
+    cat:"jens"
 },
 {
     id: 4,
     img: "https://cdn.pixabay.com/photo/2021/11/15/05/54/couple-6796433__340.jpg",
-    title: "LIGHT JEANS"
+    title: "LIGHT JEANS",
+    cat:"men"
 }
 ]
 
